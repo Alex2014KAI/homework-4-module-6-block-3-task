@@ -2,6 +2,17 @@
 
 namespace GeometricFigure {
 
+    Triangle::Triangle() : Figure() {
+        _name = "Треугольник";
+        _numberSides = 3;
+        _sideA = 10;
+        _sideB = 20;
+        _sideC = 30;
+        _angleA = 50;
+        _angleB = 60;
+        _angleC = 70;
+    };
+
     void Triangle::printData() {
         std::cout << getName() << ":" << std::endl;
         std::cout << "Стороны: ";

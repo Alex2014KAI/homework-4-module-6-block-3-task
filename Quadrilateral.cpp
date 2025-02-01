@@ -2,6 +2,19 @@
 
 namespace GeometricFigure {
 
+    Quadrilateral::Quadrilateral() : Figure() {
+        _name = "Четырёхугольник";
+        _numberSides = 4;
+        _sideA = 10;
+        _sideB = 20;
+        _sideC = 30;
+        _sideD = 40;
+        _angleA = 50;
+        _angleB = 60;
+        _angleC = 70;
+        _angleD = 80;
+    };
+
     void Quadrilateral::printData() {
         std::cout << getName() << ":" << std::endl;
         std::cout << "Стороны: ";
